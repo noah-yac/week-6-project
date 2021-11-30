@@ -17,8 +17,15 @@ a function called PrettyPrintResults to output the results, i.e., bowler name, s
 Don't use Vectors or any other newfangled container, use only old school C arrays like in the book.
 Use repetition structures (loops) in your functions to perform calculations and printing. Remember "dimensions = loops". So, a 2-dimensional array will require 2 loops to completely iterate over all of the elements in the array.
 Don't use magic numbers. Instead use global constants at the top of the program under the includes.
-And as always include lots of meaningful comments so that I can follow your logic and know that you understand the program you wrote.
+include lots of meaningful comments
+
+Modify the Week 06 - Programming Assignment so that it calculates the average of 5 bowling scores.
+
+Note: This will require you to modify the "BowlingScores.txt" file (5 scores per bowler instead of 4) to test your modifications.
+
+Post the new modified source code (CPP file) to your GitHub (Links to an external site.) account.
 */
+
 
 #include <iostream>
 //adds format manipulators
@@ -39,7 +46,7 @@ void GetAverageScore();
 void PrettyPrintResults();
 
 //constant variables
-const int rounds_per_game = 5; //meaning 4 rounds
+const int rounds_per_game = 5; //meaning 5 rounds
 const int player_count = 10; //meaning 10 players max
 
 //arrays
